@@ -338,17 +338,20 @@ const clearHistory = async () => {
   🚪 Logout
 </button>
 
-          <button onClick={clearChat}>
-            Clear
-          </button>
+          <button className="clear-btn" onClick={clearChat}>
+  Clear
+</button>
 
           <button onClick={newChat}>
             🆕 New Chat
           </button>
 
-          <button onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? "☀️" : "🌙"}
-          </button>
+<button
+  className="dark-mode-btn"
+  onClick={() => setDarkMode(!darkMode)}
+>
+  {darkMode ? "☀️" : "🌙"}
+</button>
         </div>
 
         {/* CHAT HISTORY */}
